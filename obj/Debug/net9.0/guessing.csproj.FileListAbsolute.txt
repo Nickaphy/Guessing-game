@@ -1,0 +1,14 @@
+/home/nicklas/Desktop/Programming/C#/guessing/obj/Debug/net9.0/guessing.GeneratedMSBuildEditorConfig.editorconfig
+/home/nicklas/Desktop/Programming/C#/guessing/obj/Debug/net9.0/guessing.AssemblyInfoInputs.cache
+/home/nicklas/Desktop/Programming/C#/guessing/obj/Debug/net9.0/guessing.AssemblyInfo.cs
+/home/nicklas/Desktop/Programming/C#/guessing/obj/Debug/net9.0/guessing.csproj.CoreCompileInputs.cache
+/home/nicklas/Desktop/Programming/C#/guessing/bin/Debug/net9.0/guessing
+/home/nicklas/Desktop/Programming/C#/guessing/bin/Debug/net9.0/guessing.deps.json
+/home/nicklas/Desktop/Programming/C#/guessing/bin/Debug/net9.0/guessing.runtimeconfig.json
+/home/nicklas/Desktop/Programming/C#/guessing/bin/Debug/net9.0/guessing.dll
+/home/nicklas/Desktop/Programming/C#/guessing/bin/Debug/net9.0/guessing.pdb
+/home/nicklas/Desktop/Programming/C#/guessing/obj/Debug/net9.0/guessing.dll
+/home/nicklas/Desktop/Programming/C#/guessing/obj/Debug/net9.0/refint/guessing.dll
+/home/nicklas/Desktop/Programming/C#/guessing/obj/Debug/net9.0/guessing.pdb
+/home/nicklas/Desktop/Programming/C#/guessing/obj/Debug/net9.0/guessing.genruntimeconfig.cache
+/home/nicklas/Desktop/Programming/C#/guessing/obj/Debug/net9.0/ref/guessing.dll
