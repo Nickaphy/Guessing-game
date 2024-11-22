@@ -12,3 +12,4 @@
 /home/nicklas/Desktop/Programming/C#/guessing/obj/Debug/net9.0/guessing.pdb
 /home/nicklas/Desktop/Programming/C#/guessing/obj/Debug/net9.0/guessing.genruntimeconfig.cache
 /home/nicklas/Desktop/Programming/C#/guessing/obj/Debug/net9.0/ref/guessing.dll
+/home/nicklas/Desktop/Programming/C#/guessing/obj/Debug/net9.0/guessing.sourcelink.json
