@@ -40,7 +40,7 @@ namespace Program
                             Console.WriteLine("Between 0 - 25...");
                         }else if (EasyGuess == EasyNumber)
                         {
-                            Console.WriteLine("U WON!\nWanna play again [Y]es[N]o");
+                            Console.WriteLine("U WON! the number was " + EasyNumber + "\nWanna play again [Y]es[N]o");
                             string EasyRestart = Console.ReadLine();
                             EasyRestart = EasyRestart.ToUpper();
                             if (EasyRestart == "Y")
@@ -80,7 +80,56 @@ namespace Program
 
                 break;
                 case 2:
+                int x = 0;
+                Console.WriteLine("Guessing game on medium difficulty!\nYou will guess a whole number between 0 and 50\nU have 25 tries");
+                int MediumNumber= tilfældig.Next(0, 51); //generating a number between 0-25
 
+                while (x < 50)
+               {
+                    Console.WriteLine("Guess: ");
+                    string mediuminput= Console.ReadLine();
+                    int MediumGuess;
+
+                    if (int.TryParse(mediuminput, out MediumGuess))
+                    {
+                        x ++;
+
+                       if (MediumNumber > MediumGuess)
+                       {
+                            Console.WriteLine("Too low");
+                       }else if (MediumNumber < MediumGuess)
+                       {
+                            Console.WriteLine("Too high");
+                       }else if (MediumNumber == MediumGuess)
+                       {
+                            Console.WriteLine("U won! the number was " + MediumNumber + "\nWanna play again [Y]es [N]O");
+                            string MediumRestart = Console.ReadLine();
+                            MediumRestart = MediumRestart.ToUpper();
+                            if  (MediumRestart ==  "Y")
+                            {
+                                Console.WriteLine("I will clear the console for you just restart the game");
+                                Thread.Sleep(2000);
+                                Console.Clear();
+                                Environment.Exit(0);
+                            }else if (MediumRestart == "N")
+                            {
+                                Console.WriteLine("Thank you for playing");
+                                Thread.Sleep(2000);
+                                Environment.Exit(0);
+                            }else if (MediumRestart != "N" || MediumRestart != "Y")
+                            {
+                                Console.WriteLine("A tat fatfingered huh?");
+                                Thread.Sleep(2000);
+                                Environment.Exit(0);
+                            }
+                       }else if (x>25)
+                       {
+                            Console.WriteLine("GAME OVER!");
+                            Thread.Sleep(2000);
+                            Console.Clear();
+                       }
+                    }
+               }
                 break;
                 case 3:
 
