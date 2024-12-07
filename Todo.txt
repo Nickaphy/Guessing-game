@@ -1,0 +1,2 @@
+guessgame.cs:
+Hard mode out of tries statement wont work properly

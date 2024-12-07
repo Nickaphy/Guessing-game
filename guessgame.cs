@@ -64,7 +64,7 @@ namespace Program
                                 Environment.Exit(0);
                             }
                         }
-                        if (i>25)
+                        if (i>24)
                         {
                             Console.WriteLine("U have now spent 25 tries guessing a number between 0 and 25\nI think we might have to stop here");
                             Thread.Sleep(4000);
@@ -82,7 +82,7 @@ namespace Program
                 case 2:
                 int x = 0;
                 Console.WriteLine("Guessing game on medium difficulty!\nYou will guess a whole number between 0 and 50\nU have 25 tries");
-                int MediumNumber= tilfældig.Next(0, 51); //generating a number between 0-25
+                int MediumNumber = tilfældig.Next(0, 51); //generating a number between 0-25
 
                 while (x < 50)
                {
@@ -115,26 +115,95 @@ namespace Program
                             {
                                 Console.WriteLine("Thank you for playing");
                                 Thread.Sleep(2000);
+                                Console.Clear();
                                 Environment.Exit(0);
                             }else if (MediumRestart != "N" || MediumRestart != "Y")
                             {
                                 Console.WriteLine("A tat fatfingered huh?");
                                 Thread.Sleep(2000);
+                                Console.Clear();
                                 Environment.Exit(0);
                             }
-                       }else if (x>25)
+                       }if (x>24)
                        {
                             Console.WriteLine("GAME OVER!");
                             Thread.Sleep(2000);
                             Console.Clear();
+                            Environment.Exit(0);
                        }
+                    }else
+                    {
+                        Console.WriteLine("A number..,");
+                        Thread.Sleep(1000);
                     }
                }
                 break;
                 case 3:
+                    int y = 0;
+                    Console.WriteLine("Guessing game on hard difficulty!\nYou will guess a whole number between 0 and 100\nU have 10 tries");
+                    int HardNumber = tilfældig.Next(0, 101); //generating a number between 0-25
+                    int HardGuess;
 
-                break;
+                    while(y<11)
+                    {
+                        Console.WriteLine("Guess:");
+                        string HardInput = Console.ReadLine();
+                        if (int.TryParse(HardInput, out HardGuess))
+                        {
+                            y ++; 
+
+                            if(HardGuess > HardNumber)
+                            {
+                                Console.WriteLine("Too high");
+                            }else if(HardGuess < HardNumber)
+                            {
+                                Console.WriteLine("Too low");
+                            }else if(HardGuess > 100)
+                            {
+                                Console.WriteLine("Between 0 - 100");
+                            }else if(HardGuess == HardNumber)
+                            {
+                                Console.WriteLine("Congratulations u won! The number was " + HardNumber + " Wanna play again [Y]es [N]o");
+                                string HardRestart = Console.ReadLine();
+                                
+                                HardRestart = HardRestart.ToUpper();
+                                if(HardRestart == "Y")
+                                {
+                                    Console.WriteLine("I will clear the console for you, just rerun the program.");
+                                    Thread.Sleep(2000);
+                                    Console.Clear();
+                                    Environment.Exit(0);
+                                }else if(HardRestart == "N")
+                                {
+                                    Console.WriteLine("Thank you for playing");
+                                    Thread.Sleep(2000);
+                                    Console.Clear();
+                                    Environment.Exit(0);
+                                }else if(HardRestart != "N" || HardRestart != "Y")
+                                {
+                                    Console.WriteLine("Testing my error handling i see...");
+                                    Thread.Sleep(2000);
+                                    Console.Clear();
+                                    Environment.Exit(0);
+                                }
+                            }if(y>9)
+                            {
+                                Console.WriteLine("GAME OVER!");
+                                Thread.Sleep(2000);
+                                Console.Clear();
+                                Environment.Exit(0);
+                            }
+                            
+                        }else 
+                        {
+                            Console.WriteLine("A number...");
+                            Thread.Sleep(1000);
+                        }
+                    }
+
+                    break;
             }
         }
     }
 }
+ 
